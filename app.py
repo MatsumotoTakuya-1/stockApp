@@ -18,7 +18,7 @@ st.sidebar.write(
 """
 )
 
-days = st.sidebar.slider('日数', 1, 50, 20)
+days = st.sidebar.slider('日数', 1, 360, 20)
 
 st.write(
     f"""
@@ -49,7 +49,7 @@ try:
   """
   )
 
-  ymin, ymax = st.sidebar.slider("範囲を指定してください", 0.0, 3500.0, (0.0, 3500.0))
+  ymin, ymax = st.sidebar.slider("範囲を指定してください", 0.0, 1000.0, (0.0, 1000.0))
 
   tickers = {
       "apple": "AAPL",
